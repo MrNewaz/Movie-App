@@ -35,7 +35,6 @@ export default function useMovieSearch(query: string, pageNumber: number) {
           setLoading(false)
           return setError(true)
         }
-        console.log(res.data)
         setMovies((prevMovies: Movie[]) => {
           return [...prevMovies, ...res.data.Search] as Movie[]
         })
