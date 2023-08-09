@@ -1,6 +1,8 @@
+# Movie app
+
 ![home_page](screenshots/ss.png)
 
-# Movie app
+
 
 This is an assignment for movie app with OMDb API for the Julo interview process.
 The below information is the guideline for developers how to setup the applications locally.
