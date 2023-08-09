@@ -59,7 +59,7 @@ const Home = () => {
           }
         })}
       </Grid>
-      <Loading loading={loading} />
+      <Loading loading={true} />
       <Box
         sx={{
           my: 6,
