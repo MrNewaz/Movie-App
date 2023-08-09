@@ -5,6 +5,7 @@ import noImage from 'assets/no-image.png'
 import { Link } from 'react-router-dom'
 import Movie from 'types/MovieType'
 
+/// [MovieCard] - MovieCard reuseable component for movie list
 const MovieCard = ({ movie }: { movie: Movie }) => {
   return (
     <Box

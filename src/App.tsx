@@ -10,7 +10,9 @@ import Navbar from 'components/Navbar/Navbar'
 import AppRoutes from 'Routes'
 import ScrollToTop from 'utils/ScrollToTop'
 
+/// [App] - App component for the app
 const App = () => {
+  /// Theme for the app using MUI
   const theme = createTheme({
     palette: {
       mode: 'light',

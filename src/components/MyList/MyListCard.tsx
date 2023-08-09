@@ -5,6 +5,7 @@ import noImage from 'assets/no-image.png'
 import { Link } from 'react-router-dom'
 import Movie from 'types/MovieType'
 
+/// [MyListCard] - MyListCard reuseable component for mylist page
 const MyListCard = ({
   movie,
   handleRemove,

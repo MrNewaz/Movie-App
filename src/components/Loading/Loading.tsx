@@ -2,6 +2,7 @@ import { Grid, useMediaQuery } from '@mui/material'
 import Box from '@mui/material/Box'
 import LoadingCard from './LoadingCard'
 
+/// [Loading] - Loading component for the app
 const Loading = ({ loading }: { loading: Boolean }) => {
   const isSmall = useMediaQuery('(max-width:500px)')
   return (

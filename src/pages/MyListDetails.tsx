@@ -4,6 +4,7 @@ import { useStateContext } from 'context/Context'
 import { useNavigate, useParams } from 'react-router-dom'
 import Movie from 'types/MovieType'
 
+/// [MyListDetails] - MyListDetails page for the app
 const MyListDetails = () => {
   const { id } = useParams()
   const { getMovieById, removeFromList } = useStateContext()
@@ -12,6 +13,7 @@ const MyListDetails = () => {
 
   const navigate = useNavigate()
 
+  /// handle remove from list and navigate to mylist page
   const handleRemove = () => {
     removeFromList(id as string)
     navigate('/mylist')

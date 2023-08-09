@@ -4,6 +4,7 @@ import MyList from 'pages/MyList'
 import MyListDetails from 'pages/MyListDetails'
 import { Route, Routes } from 'react-router-dom'
 
+/// [AppRoutes] All routes for the app are defined here
 const AppRoutes = () => {
   return (
     <main>

@@ -1,5 +1,6 @@
 import { Box, Card, Skeleton } from '@mui/material'
 
+/// [LoadingCard] - LoadingCard reuseable component for loading
 const LoadingCard = () => {
   return (
     <Card

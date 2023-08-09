@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
+/// [Footer] - Footer component for the app
 const Footer = () => {
   return (
     <Box

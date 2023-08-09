@@ -1,8 +1,7 @@
 import { TextField } from '@mui/material'
 
-const SearchBar = ({ handleSearch } :{
-  handleSearch: (e: any) => void
-}) => {
+/// [SearchBar] - SearchBar component for the app
+const SearchBar = ({ handleSearch }: { handleSearch: (e: any) => void }) => {
   return (
     <TextField
       id="search"

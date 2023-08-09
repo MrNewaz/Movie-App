@@ -2,6 +2,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Movie from 'types/MovieType'
 
+/// [useMovieSearch] - custom hook for movie search
 export default function useMovieSearch(query: string, pageNumber: number) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)

@@ -8,12 +8,14 @@ import { useCallback, useRef, useState } from 'react'
 import IntersectionObserverType from 'types/IntersectionObserverType'
 import Movie from 'types/MovieType'
 
+/// [Home] - Home page for the app
 const Home = () => {
   const [query, setQuery] = useState('Justice League')
   const [pageNumber, setPageNumber] = useState(1)
 
   const { movies, hasMore, loading, error } = useMovieSearch(query, pageNumber)
 
+  /// infinite scroll logic
   const observer = useRef<IntersectionObserverType | null>(null)
   const lastMovieElementRef = useCallback(
     (node: any) => {
@@ -29,6 +31,7 @@ const Home = () => {
     [loading, hasMore]
   )
 
+  /// handle search logic
   const handleSearch = (e: any) => {
     setQuery(e.target.value)
     setPageNumber(1)

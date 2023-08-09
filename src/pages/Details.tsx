@@ -6,11 +6,13 @@ import { useStateContext } from 'context/Context'
 import useSingleMovieSearch from 'hooks/useSingleMovieSearch'
 import { useParams } from 'react-router-dom'
 
+/// [Details] - Details page for the app
 const Details = () => {
   const { id } = useParams()
   const { addToList, movieExists } = useStateContext()
   const { loading, error, movie } = useSingleMovieSearch(id as string)
 
+  /// while loading show loading card
   if (loading) {
     return (
       <Container

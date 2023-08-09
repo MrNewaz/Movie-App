@@ -3,9 +3,11 @@ import MyListCard from 'components/MyList/MyListCard'
 import { useStateContext } from 'context/Context'
 import { Link } from 'react-router-dom'
 
+/// [MyList] - MyList page for the app
 const MyList = () => {
   const { movieList, removeFromList } = useStateContext()
 
+  /// handle remove from list
   const handleRemove = (e: any, id: string) => {
     e.preventDefault()
     removeFromList(id)

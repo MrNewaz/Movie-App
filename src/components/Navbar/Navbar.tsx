@@ -3,13 +3,12 @@ import AppBar from '@mui/material/AppBar'
 import Container from '@mui/material/Container'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
+
 import { Link, useLocation } from 'react-router-dom'
+import Page from 'types/PageType'
+import { pages } from 'utils/constants'
 
-const pages = [
-  { name: 'Home', to: '/' },
-  { name: 'My List', to: '/mylist' },
-]
-
+/// [Navbar] - Navbar component for the app
 const Navbar = () => {
   const location = useLocation()
   return (
@@ -34,9 +33,9 @@ const Navbar = () => {
               gap: 2,
             }}
           >
-            {pages.map((page, index) => (
+            {pages.map((page: Page) => (
               <Button
-                key={index}
+                key={page.to}
                 color="inherit"
                 variant={location.pathname === page.to ? 'outlined' : 'text'}
                 component={Link}
