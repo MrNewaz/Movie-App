@@ -1,14 +1,8 @@
 import { createContext, useContext, useEffect, useState } from 'react'
-import { getCachedMovie, setCachedMovie } from '../utils/LocalStorage'
-import { Movie } from 'types/MovieType'
+import ContextProps from 'types/ContextPropsType'
 
-export interface ContextProps {
-  movieList: Movie[]
-  movieExists: (id: string) => boolean
-  getMovieById: (id: string) => Movie | undefined
-  addToList: (movie: Movie) => void
-  removeFromList: (id: string) => void
-}
+import Movie from 'types/MovieType'
+import { getCachedMovie, setCachedMovie } from '../utils/LocalStorage'
 
 export const Context = createContext<ContextProps>({
   movieList: [],

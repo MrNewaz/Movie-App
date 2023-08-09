@@ -5,8 +5,8 @@ import SearchBar from 'components/Home/SearchBar'
 import Loading from 'components/Loading/Loading'
 import useMovieSearch from 'hooks/useMovieSearch'
 import { useCallback, useRef, useState } from 'react'
-import { IntersectionObserverType } from 'types/IntersectionObserverType'
-import { Movie } from 'types/MovieType'
+import IntersectionObserverType from 'types/IntersectionObserverType'
+import Movie from 'types/MovieType'
 
 const Home = () => {
   const [query, setQuery] = useState('Justice League')

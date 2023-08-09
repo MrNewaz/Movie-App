@@ -64,4 +64,4 @@ npm start
 
 ## Note
 Check this design doc to get an overview of app.
-[Design Doc for Movie App](https://drive.google.com/file/d/1ifJqPWgighAuiNvY30thyegoW4D-6V_R/view?usp=share_link)
+[Design Doc for Movie App](https://docs.google.com/document/d/1xJv8IPtERKYrfYmz78BBBAUS6t0XkQOnAVWxdSVdQpU/edit?usp=sharing)

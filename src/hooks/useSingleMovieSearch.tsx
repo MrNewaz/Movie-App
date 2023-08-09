@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { Movie } from 'types/MovieType'
+import Movie from 'types/MovieType'
 
 export default function useSingleMovieSearch(id: string) {
   const [loading, setLoading] = useState(true)
