@@ -1,20 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import { getCachedMovie, setCachedMovie } from '../utils/LocalStorage'
-
-export interface Movie {
-  Title: string
-  Year: string
-  imdbID: string
-  Type: string
-  Poster?: string
-  Plot?: string
-  Released?: string
-  Country?: string
-  imdbRating?: string
-  imdbVotes?: string
-  Language?: string
-  Genre: string
-}
+import { Movie } from 'types/MovieType'
 
 export interface ContextProps {
   movieList: Movie[]

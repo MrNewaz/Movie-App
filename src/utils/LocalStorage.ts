@@ -1,4 +1,4 @@
-import { Movie } from '../context/Context'
+import { Movie } from 'types/MovieType'
 
 const setCachedMovie = (movieList: Movie[]) => {
   localStorage.setItem('movies', JSON.stringify(movieList))

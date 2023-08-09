@@ -1,7 +1,8 @@
 import { Box, Button, Chip, Container, Typography } from '@mui/material'
 import noImage from 'assets/no-image.png'
-import { Movie, useStateContext } from 'context/Context'
+import { useStateContext } from 'context/Context'
 import { useNavigate, useParams } from 'react-router-dom'
+import { Movie } from 'types/MovieType'
 
 const MyListDetails = () => {
   const { id } = useParams()
@@ -84,8 +85,8 @@ const MyListDetails = () => {
           }}
         >
           {movie.Genre.split(', ')
-            .map((genre) => genre.trim())
-            .map((genre) => (
+            .map((genre: string) => genre.trim())
+            .map((genre: string) => (
               <Chip key={genre} color="info" label={genre} />
             ))}
         </Box>

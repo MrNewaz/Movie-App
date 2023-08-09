@@ -2,8 +2,8 @@ import { Card, Chip } from '@mui/material'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import noImage from 'assets/no-image.png'
-import { Movie } from 'context/Context'
 import { Link } from 'react-router-dom'
+import { Movie } from 'types/MovieType'
 
 const MovieCard = ({ movie }: { movie: Movie }) => {
   return (

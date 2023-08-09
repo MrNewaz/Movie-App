@@ -3,14 +3,10 @@ import Container from '@mui/material/Container'
 import MovieCard from 'components/Home/MovieCard'
 import SearchBar from 'components/Home/SearchBar'
 import Loading from 'components/Loading/Loading'
-import { Movie } from 'context/Context'
 import useMovieSearch from 'hooks/useMovieSearch'
 import { useCallback, useRef, useState } from 'react'
-
-interface IntersectionObserverType {
-  disconnect: () => void
-  observe: (target: Element) => void
-}
+import { IntersectionObserverType } from 'types/IntersectionObserverType'
+import { Movie } from 'types/MovieType'
 
 const Home = () => {
   const [query, setQuery] = useState('Justice League')
