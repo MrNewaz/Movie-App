@@ -1,4 +1,4 @@
-# Movie App
+# Movie App || Live Demo [Movie App](https://julo-movies.netlify.app/)
 
 ![home_page](screenshots/ss.png)
 
