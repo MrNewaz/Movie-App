@@ -18,6 +18,7 @@ The below information is the guideline for developers how to setup the web app l
 - Emotion
 - React Testing Library
 - Jest
+- OMDb API
 
 ---
 ## Introduction
