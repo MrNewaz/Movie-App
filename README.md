@@ -1,15 +1,13 @@
-# Movie app
+# Movie App
 
 ![home_page](screenshots/ss.png)
-
-
 
 This is an assignment for movie app with OMDb API for the Julo interview process.
 The below information is the guideline for developers how to setup the applications locally.
 
 ---
 
-## Tech used:
+## Tech Used
 
 - React.js
 - Typescript
@@ -52,7 +50,7 @@ npm install
 
 ---
 
-## Running the React App
+## Run the React App
 
 After setting up the environment and installing the necessary dependencies, you can run the web application:
 Execute the bash command in the root directory of the project.
